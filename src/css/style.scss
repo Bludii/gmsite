@@ -2,7 +2,7 @@ $white: #ffffff;
 $black: #252525;
 $primary1: #3554d1;
 $primary2: #0f2480;
-
+$yellow: #d9b60b;
 
 @mixin main-font {
   font-family: 'Poppins', sans-serif;
@@ -138,7 +138,7 @@ body {
       &.active,
       &:hover {
         .nav-link {
-          color: $primary1;
+          color: $yellow;
         }
       }
     }

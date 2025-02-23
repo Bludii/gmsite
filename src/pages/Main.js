@@ -1,5 +1,5 @@
-import React from "react";
-import "./diffcss/Main.css";
+import React, { useEffect } from 'react';
+
 import Logo from "./../assets/logo.png"
 import Listing1 from "./../assets/listing-01.jpg"
 import Listing2 from "./../assets/listing-02.jpg"
@@ -10,9 +10,9 @@ import Listing6 from "./../assets/listing-06.jpg"
 import ListingI1 from "./../assets/listing-icon-01.png"
 import ListingI2 from "./../assets/listing-icon-02.png"
 import ListingI3 from "./../assets/listing-icon-03.png"
-import BlockA from "./../assets/building1.jpg"
-import BlockB from "./../assets/building2.jpg"
-import BlockC from "./../assets/building3.jpg"
+import BlockA from "./../assets/building.jpeg"
+import BlockB from "./../assets/building.jpg"
+import BlockC from "./../assets/building1.jpeg"
 import Square from "./../assets/square.png"
 import AboutImg from "./../assets/about-img.jpg"
 import D1 from "./../assets/d-1.jpg"
@@ -23,6 +23,26 @@ import U3 from "./../assets/u-3.png"
 import U4 from "./../assets/u-4.png"
 import ClientImg from "./../assets/client.jpg"
 const Main = () => {
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.header_section');
+      if (window.scrollY > 400) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    };
+
+    // Add event listener on component mount
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
   <style
@@ -31,6 +51,7 @@ const Main = () => {
         "\n      /* Custom Scrollbar Styles */\n      ::-webkit-scrollbar {\n        width: 16px;\n        height: 16px;\n      }\n\n      ::-webkit-scrollbar-track {\n        background-color: #f1f1f1;\n        border-radius: 8px;\n        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);\n      }\n\n      ::-webkit-scrollbar-thumb {\n        background-color: #3115e7;\n        border-radius: 8px;\n        border: 4px solid #f1f1f1;\n        transition: background-color 0.3s ease;\n      }\n\n      ::-webkit-scrollbar-thumb:hover {\n        background-color: #e3c729;\n      }\n\n      ::-webkit-scrollbar-horizontal {\n        height: 16px;\n      }\n\n      body {\n        margin: 0;\n        padding: 0;\n        background-color: #f4f4f4;\n      }\n\n      .header_section {\n        background-color: rgba(\n          161,\n          189,\n          221,\n          0.1\n        ); /* Almost fully transparent */\n        padding: 5px 0;\n        width: 100%;\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        transition: background-color 0.3s ease-in-out;\n      }\n\n      .header_section.scrolled {\n        background-color: #1164c3; /* Solid color after scrolling */\n      }\n\n      .navbar {\n        display: flex;\n        align-items: center;\n        justify-content: space-between;\n        padding: 0 20px;\n      }\n\n      .navbar-brand img {\n        height: 40px;\n        width: 125px;\n      }\n\n      .navbar-nav {\n        display: flex;\n        gap: 20px;\n        list-style: none;\n        padding: 0;\n        margin: 0;\n      }\n\n      .nav-item a {\n        text-decoration: none;\n        color: white;\n        font-size: 16px;\n        font-weight: bold;\n        transition: transform 0.3s ease, padding 0.3s ease;\n      }\n\n      .nav-item a:hover {\n        transform: scale(1.1);\n        padding: 12px 24px;\n      }\n\n      .User_option {\n        display: flex;\n        gap: 15px;\n        margin-left: auto;\n      }\n\n      .User_option a {\n        padding: 10px 20px;\n        border-radius: 5px;\n        text-decoration: none;\n        font-weight: bold;\n        transition: transform 0.3s ease, padding 0.3s ease;\n      }\n\n      .User_option a:first-child {\n        background-color: transparent;\n        border: 2px solid white;\n        color: white;\n      }\n\n      .User_option a:last-child {\n        background-color: #ff9800;\n        color: white;\n      }\n    "
     }}
   />
+
   <div className="hero_area">
     {/* header section strats */}
     <header className="header_section">
@@ -701,7 +722,7 @@ const Main = () => {
         </div>
         {/* Block B */}
         <div className="card">
-          <a href="B-block.html">
+          <a href="Block">
             <img src={BlockB} alt="Apartment B" />
             <div className="card-content">
               <h3>Block B</h3>
