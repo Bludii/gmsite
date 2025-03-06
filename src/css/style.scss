@@ -2,7 +2,7 @@ $white: #ffffff;
 $black: #252525;
 $primary1: #3554d1;
 $primary2: #0f2480;
-$yellow: #d9b60b;
+$gray: #616266;
 
 @mixin main-font {
   font-family: 'Poppins', sans-serif;
@@ -130,7 +130,7 @@ body {
     .nav-item {
       .nav-link {
         padding: 10px 15px;
-        color: #060606;
+        color: #494949;
         text-align: center;
         text-transform: uppercase;
       }
@@ -138,7 +138,7 @@ body {
       &.active,
       &:hover {
         .nav-link {
-          color: $yellow;
+          color: #0b0b0b;
         }
       }
     }
@@ -339,12 +339,12 @@ a:focus {
 
 
     h1 {
-      color: $primary1;
+      color: #2a2a2cb1;
       font-weight: bold;
       font-size: 4rem;
 
       span {
-        color: $primary2;
+        color: $black;
       }
     }
 
@@ -357,7 +357,7 @@ a:focus {
       margin-top: 45px;
 
       a {
-        @include hero_btn($primary1, $white, 8px, 35px, 25px);
+        @include hero_btn($black, $white, 8px, 35px, 25px);
         margin-bottom: 75px;
       }
     }

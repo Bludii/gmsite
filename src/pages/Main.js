@@ -129,33 +129,7 @@ const Main = () => {
     {/* end slider section */}
   </div>
   {/* find section */}
-  <section className="find_section">
-    <div className="container">
-      <form action="">
-        <div className="form-row">
-          <div className="col-md-5">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Serach Your Categories "
-            />
-          </div>
-          <div className="col-md-5">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Location "
-            />
-          </div>
-          <div className="col-md-2">
-            <button type="submit" className="">
-              search
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
+
   {/* end find section */}
   <div id="listing" className="recent-listing">
     <div className="container">
@@ -993,55 +967,52 @@ const Main = () => {
   {/* end client section */}
   {/* contact section */}
   <section id="contact" className="contact_section">
-    <div className="container">
-      <div className="heading_container">
-        <h2>Get In Touch</h2>
-      </div>
+  <div className="container">
+    <div className="heading_container">
+      <h2>Get In Touch</h2>
     </div>
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-6 px-0">
-          <div className="map_container">
-            <div className="map-responsive">
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                width={600}
-                height={300}
-                frameBorder={0}
-                style={{ border: 0, width: "100%", height: "100%" }}
-                allowFullScreen=""
-              />
+  </div>
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-md-6 px-0">
+        <div className="map_container">
+          <div className="map-responsive">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4409974549895!2d41.61501142283715!3d41.63066476629647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDEuNjMwNjY0LCA0MS42MTUwMTE=!5e0!3m2!1sen!2sge!4v1741098494528!5m2!1sen!2sge"
+              width={600}
+              height={300}
+              frameBorder={0}
+              style={{ border: 0, width: "100%", height: "100%" }}
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-4 col-md-5">
+        <div className="form_container">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" />
             </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-5">
-          <div className="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  className="message-box"
-                  placeholder="Message"
-                />
-              </div>
-              <div className="d-flex">
-                <button>Send</button>
-              </div>
-            </form>
-          </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <div>
+              <input type="text" className="message-box" placeholder="Message" />
+            </div>
+            <div className="d-flex">
+              <button>Send</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 </>
 
   );

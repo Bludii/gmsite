@@ -361,7 +361,7 @@ body {
 }
 
 .header_section.scrolled {
-  background-color: #1164c3; /* Solid color after scrolling */
+  background-color: #7c7d82!important; /* Solid color after scrolling */
 }
 
 .navbar {
