@@ -32,6 +32,10 @@ const Block = () => {
                   Blocks
                 </a>
               </li>
+              <div className="User_option">
+              <a href="Login">Sign In</a>
+              <a href="register">Sign Up</a>
+            </div>
             </ul>
           </nav>
         </div>
