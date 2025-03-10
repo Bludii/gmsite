@@ -995,7 +995,7 @@ const Main = () => {
 <MobileView>
 
 
-  
+
 </MobileView>
 
 </>
