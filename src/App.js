@@ -6,6 +6,7 @@ import Main from "./pages/Main";
 import Block from "./pages/Block";
 import Plan from "./pages/Plan";
 import Apartment from "./pages/Apartment";
+import Login from "./pages/Login";
 
 const App = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/block" element={<Block />} />
         <Route path="/plan" element={<Plan />} />
         <Route path="/apartment" element={<Apartment />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
