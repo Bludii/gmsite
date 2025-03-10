@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Login from './Login.js';
+import Register from './Register.js';
 
 import Logo from "./../assets/logo.png"
 import Listing1 from "./../assets/listing-01.jpg"
@@ -94,7 +95,7 @@ const Main = () => {
             </li>
             <div className="User_option">
               <a href="Login">Sign In</a>
-              <a href="signup.html">Sign Up</a>
+              <a href="register">Sign Up</a>
             </div>
           </ul>
         </nav>
