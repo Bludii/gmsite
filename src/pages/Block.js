@@ -2,12 +2,15 @@ import React from 'react';
 import Logo from "./../assets/logo.png";
 import Building from "./../assets/building.jpg";
 import { useNavigate } from "react-router-dom";
+import { BrowserView, MobileView } from 'react-device-detect';
 
 
 const Block = () => {
   const navigate = useNavigate(); // Initialize navigate
 
   return (
+    <>
+    <BrowserView>
     <div>
         <style
     dangerouslySetInnerHTML={{
@@ -228,6 +231,17 @@ const Block = () => {
         </div>
       </div>
     </div>
+    </BrowserView>
+    <MobileView>
+
+
+
+
+
+
+      
+    </MobileView>
+    </>
   );
 }
 
