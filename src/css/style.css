@@ -1,3 +1,13 @@
+area {
+  outline: 2px solid transparent; /* Default transparent */
+}
+
+area:hover {
+  outline: 2px solid red; /* Change border on hover */
+}
+
+
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #0c0c0c;

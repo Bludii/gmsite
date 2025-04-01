@@ -61,7 +61,7 @@ const Main = () => {
   />
   
   <div className="hero_area">
-    {/* header section strats */}
+      
     <header className="header_section">
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg custom_nav-container">
@@ -99,6 +99,12 @@ const Main = () => {
                 CONTACT US
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/gallery">
+                Gallery 
+              </a>
+            </li>
+
             <div className="User_option">
               <a href="Login">Sign In</a>
               <a href="register">Sign Up</a>
