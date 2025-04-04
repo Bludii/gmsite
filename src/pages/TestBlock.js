@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+
+import React, { useEffect, useState } from 'react';
 import './block.css';
 import ft2 from '../assets/ft2.png';
-import { useNavigate } from 'react-router-dom';
 
+const TestBlock = () => {
 
-const Block = () => {
-  
     const [tooltipText, setTooltipText] = useState('');
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
@@ -23,13 +22,6 @@ const Block = () => {
   const handleMouseLeave = () => {
     setIsVisible(false);
   };
-
-  const navigate = useNavigate();
-
-const handleClick = () => {
-  navigate('/plan'); // this goes to Plan.js (assuming it's routed correctly)
-};
-
 
   return (
     <div>
@@ -70,7 +62,6 @@ const handleClick = () => {
             onMouseEnter={(e) => handleMouseEnter(e, 'Floor 35')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
           />
           <path
         data-tooltip="Floor 34"
@@ -81,7 +72,6 @@ const handleClick = () => {
       onMouseEnter={(e) => handleMouseEnter(e, 'Floor 34')}
     onMouseMove={handleMouseMove}
     onMouseLeave={handleMouseLeave}
-	onClick={handleClick}
 />
       <path
         data-tooltip="Floor 33"
@@ -92,7 +82,6 @@ const handleClick = () => {
      onMouseEnter={(e) => handleMouseEnter(e, 'Floor 33')}
     onMouseMove={handleMouseMove}
     onMouseLeave={handleMouseLeave}
-	onClick={handleClick}
  />
       <path
         data-tooltip="Floor 32"
@@ -103,7 +92,6 @@ const handleClick = () => {
     onMoonMouseEnter={(e) => handleMouseEnter(e, 'Floor 32')}
     onMouseMove={handleMouseMove}
     onMouseLeave={handleMouseLeave}
-	onClick={handleClick}
       />
       <path
         data-tooltip="Floor 31"
@@ -114,7 +102,6 @@ const handleClick = () => {
     onMouseEnter={(e) => handleMouseEnter(e, 'Floor 31')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 30"
@@ -125,7 +112,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 30')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 29"
@@ -136,7 +122,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 29')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 28"
@@ -147,7 +132,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 28')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 27"
@@ -158,7 +142,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 27')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 26"
@@ -169,7 +152,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 26')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 25"
@@ -180,7 +162,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 25')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 24"
@@ -191,7 +172,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 24')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 23"
@@ -202,7 +182,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 23')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 22"
@@ -213,7 +192,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 22')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 21"
@@ -224,7 +202,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 21')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 20"
@@ -235,7 +212,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 20')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 19"
@@ -246,7 +222,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 19')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 18"
@@ -257,7 +232,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 18')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 17"
@@ -268,7 +242,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 17')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 16"
@@ -279,7 +252,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 16')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 15"
@@ -290,7 +262,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 15')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 14"
@@ -301,7 +272,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 14')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 13"
@@ -312,7 +282,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 13')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 12"
@@ -323,7 +292,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 12')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 11"
@@ -334,7 +302,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 11')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 10"
@@ -345,7 +312,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 10')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 9"
@@ -356,7 +322,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 9')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 8"
@@ -367,7 +332,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 8')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 7"
@@ -378,7 +342,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 7')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 6"
@@ -389,7 +352,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 6')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 5"
@@ -400,7 +362,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 5')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 4"
@@ -411,7 +372,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 4')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 3"
@@ -422,7 +382,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 3')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 2"
@@ -433,7 +392,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 2')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
       <path
         data-tooltip="Floor 1"
@@ -444,7 +402,6 @@ const handleClick = () => {
         onMouseEnter={(e) => handleMouseEnter(e, 'Floor 1')}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-			onClick={handleClick}
       />
         </g>
       </svg>
@@ -453,4 +410,6 @@ const handleClick = () => {
 
 };
 
-export default Block;
+export default TestBlock;
+
+

@@ -9,6 +9,7 @@ import Apartment from "./pages/Apartment";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Gallery from "./pages/Gallery";
+import TestBlock from "./pages/TestBlock";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/gallery" element={<Gallery /> }/>
+        <Route path="/testblock" element={<TestBlock /> }/>
       </Routes>
     </Router>
   );

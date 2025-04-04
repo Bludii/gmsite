@@ -17,7 +17,9 @@ const loadScript = (src) => {
       await loadScript("/js/animation.js");
       await loadScript("/js/imagesloaded.js");
       await loadScript("/js/custom.js");
-      console.log("All scripts loaded successfully!");
+     await loadScript("/js/block.js");
+     
+     console.log("All scripts loaded successfully!");
     } catch (error) {
       console.error("Error loading scripts:", error);
     }
