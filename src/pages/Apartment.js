@@ -89,7 +89,17 @@ const Apartment = () => {
               ▷
             </button>
           </div>
-          <div className="highlight-box">Main Image</div>
+          <div className="highlight-box">
+            <iframe
+              width="100%"
+              height="350"
+              src="https://www.youtube.com/embed/sm-iS9hnyG8"
+              title="Apartment Video Tour"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
         <div className="details">
           <div className="info">
